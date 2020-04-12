@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hanif's Personal Site</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+      var myObj = JSON.parse(this.responseText);
+      document.getElementById("demo").innerHTML = myObj.description.id;
+      }
+      };
+      xmlhttp.open("GET", 'test.json', true);
+      xmlhttp.send(); 
+      </script>
+</head>
+
+<body>
+    <!-- Navs -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+        <a class="navbar-brand" href="index.html"><svg class="bi bi-people-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 008 15a6.987 6.987 0 005.468-2.63z"/>
+            <path fill-rule="evenodd" d="M8 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+            <path fill-rule="evenodd" d="M8 1a7 7 0 100 14A7 7 0 008 1zM0 8a8 8 0 1116 0A8 8 0 010 8z" clip-rule="evenodd"/>
+          </svg> Hanif Resume</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">PENGALAMAN KURSUS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pendidikan.html">PENDIDIKAN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portofolio.html">PORTOFOLIO</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+      </nav>
+      <br>
+      <!-- Navs -->
+    <div class="container mt-5">
+    <table>
+            <td><img src="image/hanif.png" alt="hanif profile picture" class="hanif"></td>
+            <td> 
+                <h1><strong>Hanif Pratama Widyanugroho</strong></h1>
+                <p>Jalan SMP 126 No.A8 Kramat Jati Jakarta Timur 13520</p>
+                <p>HanifPratamaa@gmail.com</p>
+                <p><strong>087782717676</strong></p>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h3><strong>Pengalaman Kursus</strong></h3>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <h4><strong>LearnIT Gunadarma</strong></h4>
+        </div>
+        <div class="col d-flex justify-content-end">
+            <p>Depok<br>Desember 2019</p>
+        </div>
+    </div>
+    <p>Modern Web Development : Python</p>
+    <ul>
+        <li>Belajar dasar-dasar python dan mengolahnya menggunakan aplikasi Visual Studio</li>
+        <li>Pengenalan framework flask pada python dan membuat basic aplikasi menggunakan flask</li>
+        <li>Membuat Manajemen Database dengan Flash-SQlAlchemy</li>
+        <li>Mendeploy Project ke Heroku</li>
+        <li>Membuat Aplikasi Authentication</li>
+    </ul>
+    <br>
+    <div class="row">
+        <div class="col">
+            <h4><strong>class.buildwithangga.com</strong></h4>
+        </div>
+        <div class="col d-flex justify-content-end">
+            Jakarta<br>Juli 2019 - Agustus 2019
+        </div>
+    </div>
+    <p>Full-Stack Web Designer</p>
+    <ul>
+        <li>Belajar dasar-dasar UI dan UX Design menggunakan Aplikasi Adobe XD</li>
+        <li>Membuat Wireframe Toko Online</li>
+        <li>Belajar dasar-dasar HTML, CSS, dan JavaScript</li>
+        <li>Membuat basic website Toko Online dengan framework Bootstrap 4 menggunakan aplikasi Visual Studio Code </li>
+    </ul>
+    <br>
+    <div class="row">
+        <div class="col">
+            <h4><strong>Lembaga Pengembangan Komputerisasi : Universitas Gunadarma</strong></h4>
+        </div>
+        <div class="col d-flex justify-content-end">
+            Depok<br>Januari 2018
+        </div>
+    </div>
+    <p>Introduction to Wireless LAN installation</p>
+    <ul>
+        <li>Introduction to LAN </li>
+        <li>Introduction wireless technology</li>
+        <li>Introduction to TCP/IP</li>
+        <li>Installation with Wireless LAN configuration</li>
+    </ul>
+</div>
+<br>
+
+
+<!-- Footer -->
+<footer class="border-top p-5">
+    <div class="container">
+      <div class="row mt-3 justify-content-between">
+        <div>
+          <p style="color: black;">All Right Reserved by Hanif Copyright 2020.</p>
+        </div>
+
+        <div class="col-6">
+          <p style="color: black;" id="demo"></p>
+        </div>
+      </div>
+  </div>
+  </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js" ></script>
+    <script src="js/all.js"></script>
+</body>
+
+
+</html>

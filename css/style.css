@@ -1,0 +1,55 @@
+.navbar {
+    background-color: #0c00b4;
+    border-bottom: 1px solid #333333;
+}
+
+.nav-item {
+    margin-right: 20px;
+    font-weight: 200;
+}
+
+.nav-item.active a {
+    color: rgb(10, 0, 102) !important;
+    font-weight: 600;
+}
+.hanif {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+}
+
+body {
+    background-color: rgba(18, 113, 202, 0.603);
+}
+
+hr {  
+    border-style: none;
+    border-top-style: dotted;
+    border-color: black;
+    border-width: 2px;
+
+    width: 5%;
+}
+
+row-centered {
+    text-align: center;
+}
+
+footer {
+    background-color: #0c00b4;
+    border-top: 1px solid #333333;
+}
+
+.portofolio {
+    width: 600px;
+    height: 357px;
+    border-radius: 0px;
+}
+
+
+
+
+
+
+
+

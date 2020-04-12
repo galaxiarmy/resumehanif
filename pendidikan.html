@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hanif's Personal Site</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JSON API -->
+    <script type="text/javascript">
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+      var myObj = JSON.parse(this.responseText);
+      document.getElementById("demo").innerHTML = myObj.description.id;
+      }
+      };
+      xmlhttp.open("GET", 'test.json', true);
+      xmlhttp.send(); 
+      </script>
+      <!-- JSON API -->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+        <a class="navbar-brand" href="index.html"><svg class="bi bi-people-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 008 15a6.987 6.987 0 005.468-2.63z"/>
+            <path fill-rule="evenodd" d="M8 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+            <path fill-rule="evenodd" d="M8 1a7 7 0 100 14A7 7 0 008 1zM0 8a8 8 0 1116 0A8 8 0 010 8z" clip-rule="evenodd"/>
+          </svg> Hanif Resume</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="pengalaman-kursus.html">PENGALAMAN KURSUS</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">PENDIDIKAN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portofolio.html">PORTOFOLIO</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+      </nav>
+      <br>
+      <!-- Navbar -->
+
+    <div class="container mt-5">
+      <!-- Biodata -->
+    <table>
+            <td><img src="image/hanif.png" alt="hanif profile picture" class="hanif"></td>
+            <td> 
+                <h1><strong>Hanif Pratama Widyanugroho</strong></h1>
+                <p>Jalan SMP 126 No.A8 Kramat Jati Jakarta Timur 13520</p>
+                <p>HanifPratamaa@gmail.com</p>
+                <p><strong>087782717676</strong></p>
+            </td>
+        </tr>
+    </table>
+    <!-- Biodata -->
+    <hr>
+
+    <!-- Pendidikan -->
+    <h3><strong>Pendidikan</strong></h3>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <h4><strong>UNIVERSITAS GUNADARMA</strong></h4>
+        </div>
+        <div class="col d-flex justify-content-end">
+            Jakarta
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>Program S1 Sistem Komputer -  GPA: 3.12</p>
+        </div>
+        <div class="col d-flex justify-content-end"><p>2016 - Sekarang</p></div>
+    </div>
+    <ul>
+        <li>Kursus learnIT Gunadarma – Modern Web Development: Python (2019)</li>
+        <li>Juara 4 Wall Follower Competition – Embedded System Competition (2019)</li>
+        <li>Kursus Online classbuildwithangga.com – Full-Stack Web Designer (2019)</li>
+        <li>Seminar Himpunan Mahasiswa Teknik  Komputer – KNOW THE LAST UPDATE TECHNOLOGY ON YOUR PC (2018)</li>
+        <li>Kursus Lembaga Pengembangan Komputerisasi Universitas Gunadarma Introduction to wireless LAN installation (2018) </li>
+        <li>Seminar IBM BLUEMIX – PLATFORM AS A SERVICE (2017)</li>
+        <li>Workshop Android Himpunan Mahasiswa Teknik Informatika BUILD YOUR OWN APP FROM THE GROUND (2017)</li>
+    </ul>
+    <br>
+    <div class="row">
+        <div class="col">
+            <h4><strong>SMA NEGERI 104 JAKARTA</strong></h4>
+        </div>
+        <div class="col d-flex justify-content-end">
+            INDONESIA
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>Program MIPA</p>
+        </div>
+        <div class="col d-flex justify-content-end"><p>2013 - 2016</p></div>
+    </div>
+    </div>
+<!-- Pendidikan -->
+<br>
+
+<!-- Footer -->
+<footer class="border-top p-5">
+  <div class="container">
+    <div class="row mt-3 justify-content-between">
+      <div>
+        <p style="color: black;">All Right Reserved by Hanif Copyright 2020.</p>
+      </div>
+
+      <div class="col-6">
+        <p style="color: black;" id="demo"></p>
+      </div>
+    </div>
+</div>
+</footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js" ></script>
+    <script src="js/all.js"></script>
+</body>
+
+
+</html>
